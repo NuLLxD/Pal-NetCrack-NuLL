@@ -1,6 +1,6 @@
 # PalWorld Internal
 Simple internal built with various code snippets and SDK from UC.me
-# Note: The master branch does not include visual
+Note: The master branch does not include visuals
 
 # Player Features
 - Modify Player Speed
@@ -25,7 +25,7 @@ Simple internal built with various code snippets and SDK from UC.me
 # Misc
 - Max Level
 - Give all effigies
-# These commands may have unexpected side effects
+Note: These commands may have unexpected side effects
 
 # SS
 ![image](https://github.com/NuLLxD/Pal-NetCrack-NuLL/assets/965358/1aa968ad-7975-450e-9da5-b3de34c27eef)
