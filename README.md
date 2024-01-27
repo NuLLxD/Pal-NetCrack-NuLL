@@ -9,17 +9,23 @@ Simple internal built with various code snippets and SDK from UC.me
 - Infinite Stamina
 - Infinite Ammo
 - Show player position
+- Print player position to console
 
 # Exploits
-- SafeTeleport  
-- HomeTP  
-- AnywhereTP  
-- ToggleFly    
-- God
-- Give EXP (Credit: WoodgamerHD)
-- Item Spawner
-- Effigy Gatherer
-- Catch Rate Modifier (Only works in SP)
+- Safe Teleport
+- Give EXP
+- Teleport Home
+- Toggle Fly
+- Normalize Health
+- Godmode
+- Max Weight (Only works in SP)
+- Set Catch Rate (Only works in SP)
+- Item spawner w/ search
+
+# Misc
+- Max Level
+- Give all effigies
+# These commands may have unexpected side effects
 
 # SS
 ![image](https://github.com/NuLLxD/Pal-NetCrack-NuLL/assets/965358/1aa968ad-7975-450e-9da5-b3de34c27eef)
