@@ -38,6 +38,7 @@ public:
 	bool IsRevive = false;
 	bool IsToggledFly = false;
 	bool isCatchRate = false;
+	bool isGetPalPlayerCharacter = false;
 
 	//����
 	float SpeedModiflers = 1.0f;

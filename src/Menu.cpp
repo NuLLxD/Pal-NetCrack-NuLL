@@ -252,7 +252,19 @@ namespace DX11_Base {
                     g_Console->printdbg("\n\n[+] APalPlayerCharacter: %x [+]\n\n", g_Console->color.green, p_appc);
                 }
             }
+            ImGui::Text("Player Position");
+            SDK::APalPlayerCharacter* p_appc = Config.GetPalPlayerCharacter();
+            if (p_appc != NULL)
+            {
+                if (Config.GetPalPlayerCharacter()->GetPalPlayerController() != NULL)
+                {
+                    SDK::FVector PlayerLocation = p_appc->K2_GetActorLocation();
+                    std::string MyLocation = std::format("X: {} | Y: {} | Z: {}", PlayerLocation.X, PlayerLocation.Y, PlayerLocation.Z);
+                    ImGui::Text(MyLocation.c_str());
+                }
+            }
         }
+
         void TABExploit()
         {
             //�����õİ�
