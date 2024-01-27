@@ -8,6 +8,7 @@ Simple internal built with various code snippets and SDK from UC.me
 - Modify Player Defense Power
 - Infinite Stamina
 - Infinite Ammo
+- Show player position
 
 # Exploits
 - SafeTeleport  
@@ -21,7 +22,7 @@ Simple internal built with various code snippets and SDK from UC.me
 - Catch Rate Modifier (Only works in SP)
 
 # SS
-![image](https://github.com/NuLLxD/Pal-NetCrack-NuLL/assets/965358/8e77b9c4-9732-4a0e-9bb0-2772493f89c4)
+![image](https://github.com/NuLLxD/Pal-NetCrack-NuLL/assets/965358/9f98cf74-fff5-42ff-876f-c77e00e661fc)
 ![image](https://github.com/NuLLxD/Pal-NetCrack-NuLL/assets/965358/f588bf6e-527b-449e-a94a-fb2d23e3da61)
 ![image](https://github.com/NuLLxD/Pal-NetCrack-NuLL/assets/965358/3f924e0d-5fbd-47d4-8ae5-2664602c2c98)
 ![image](https://github.com/NuLLxD/Pal-NetCrack-NuLL/assets/965358/0ba30ad0-d7a8-4c98-9f6f-056bb701da58)
