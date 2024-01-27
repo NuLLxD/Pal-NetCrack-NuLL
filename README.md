@@ -18,6 +18,7 @@ Simple internal build with various code snippets and SDK from UC.me
 - Give EXP (Credit: WoodgamerHD)
 - Item Spawner
 - Effigy Gatherer
+- Catch Rate Modifier (Only works in SP)
 
 # SS
 ![image](https://github.com/NuLLxD/Pal-NetCrack-NuLL/assets/965358/d918af9a-2b2b-48c0-83ac-21f88084b9bb)
