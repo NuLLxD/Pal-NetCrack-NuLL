@@ -215,13 +215,13 @@ namespace DX11_Base {
         {
 
             //�л�����һ��
-            ImGui::Checkbox("SpeedHack", &Config.IsSpeedHack);
+            ImGui::Checkbox("Toggle Speed", &Config.IsSpeedHack);
 
-            ImGui::Checkbox("AttackHack", &Config.IsAttackModiler);
+            ImGui::Checkbox("Toggle Atk Up", &Config.IsAttackModiler);
 
-            ImGui::Checkbox("DefenseHack", &Config.IsDefuseModiler);
+            ImGui::Checkbox("Toggle Def Up", &Config.IsDefuseModiler);
 
-            ImGui::Checkbox("InfStamina", &Config.IsInfStamina);
+            ImGui::Checkbox("Inf Stamina", &Config.IsInfStamina);
 
             ImGui::Checkbox("Godmode", &Config.IsMuteki);
 
@@ -239,9 +239,9 @@ namespace DX11_Base {
             }
 
             //��������һ��
-            ImGui::SliderFloat("SpeedModifilers", &Config.SpeedModiflers, 1, 10);
-            ImGui::SliderInt("AttackModifilers", &Config.DamageUp, 0, 200000);
-            ImGui::SliderInt("defenseModifilers", &Config.DefuseUp, 0, 200000);
+            ImGui::SliderFloat("Speed Modifier", &Config.SpeedModiflers, 1, 10);
+            ImGui::SliderInt("Attack Modifier", &Config.DamageUp, 0, 200000);
+            ImGui::SliderInt("Defense Modifier", &Config.DefuseUp, 0, 200000);
 
             //��ť����һ��
             if (ImGui::Button("PrintPlayerAddr", ImVec2(ImGui::GetContentRegionAvail().x - 3, 20)))
