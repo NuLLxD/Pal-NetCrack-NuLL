@@ -1,5 +1,5 @@
 # PalWorld Internal
-Simple internal build with various code snippets and SDK from UC.me
+Simple internal built with various code snippets and SDK from UC.me
 # Note: The master branch does not include visual
 
 # Player Features
