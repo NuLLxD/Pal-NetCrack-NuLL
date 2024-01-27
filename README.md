@@ -3,13 +3,13 @@ Simple internal built with various code snippets and SDK from UC.me
 Note: The master branch does not include visuals
 
 # Player Features
-- Modify Player Speed
-- Modify Player Attack Power
-- Modify Player Defense Power
+- Modify Speed
+- Modify Attack
+- Modify Defense
 - Infinite Stamina
 - Infinite Ammo
-- Show player position
-- Print player position to console
+- Show Player Position
+- Print Position to Console
 
 # Exploits
 - Safe Teleport
@@ -20,7 +20,7 @@ Note: The master branch does not include visuals
 - Godmode
 - Max Weight (Only works in SP)
 - Set Catch Rate (Only works in SP)
-- Item spawner w/ search
+- Item Spawner
 
 # Misc
 - Max Level
