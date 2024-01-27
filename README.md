@@ -1,7 +1,5 @@
-# PalWorld-SotMaulder
-This is the PalWorld simple hack.
-modifying player data in the Player tab
-Hacking in the Exploit tab
+# PalWorld Internal
+Simple internal build with various code snippets and SDK from UC.me
 # Note: The master branch does not include visual
 
 # Player Features
@@ -12,15 +10,22 @@ Hacking in the Exploit tab
 - Infinite Ammo
 
 # Exploits
-- SafeTeleport(You can choose the implementation for TP)  
+- SafeTeleport  
 - HomeTP  
-- AnywhereTP(It requires you to manually give a position)  
-- ToggleFly  
-- DeleteSelf(Warning: After testing, it will delete your data on the server)  
-- GodHealth  
+- AnywhereTP  
+- ToggleFly    
+- God
 - Give EXP (Credit: WoodgamerHD)
 - Item Spawner
 - Effigy Gatherer
+
+# SS
+![image](https://github.com/NuLLxD/Pal-NetCrack-NuLL/assets/965358/d918af9a-2b2b-48c0-83ac-21f88084b9bb)
+![image](https://github.com/NuLLxD/Pal-NetCrack-NuLL/assets/965358/f588bf6e-527b-449e-a94a-fb2d23e3da61)
+![image](https://github.com/NuLLxD/Pal-NetCrack-NuLL/assets/965358/3f924e0d-5fbd-47d4-8ae5-2664602c2c98)
+![image](https://github.com/NuLLxD/Pal-NetCrack-NuLL/assets/965358/0ba30ad0-d7a8-4c98-9f6f-056bb701da58)
+![image](https://github.com/NuLLxD/Pal-NetCrack-NuLL/assets/965358/200ff735-a7bf-4ba3-b988-75ed9f130019)
+![image](https://github.com/NuLLxD/Pal-NetCrack-NuLL/assets/965358/6ef335a9-578a-4fe4-b000-9322570cae14)
 
 # AOBS
 > GObjects: `48 8B 05 ? ? ? ? 48 8B 0C C8 4C 8D 04 D1 EB 03`  
