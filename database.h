@@ -1606,6 +1606,7 @@ namespace database
         "PalSphere|Pal Sphere",
         "PalSphere_Robbery|Radar Sphere",
         "PalSphere_Master|Ultra Sphere",
+        "PalSphere_Debug|Debug Sphere"
     };
 
     const auto seeds =
@@ -2152,6 +2153,7 @@ namespace database
 "PalSphere|Pal Sphere",
 "PalSphere_Robbery|Radar Sphere",
 "PalSphere_Master|Ultra Sphere",
+"PalSphere_Debug|Debug Sphere"
 "BerrySeeds|Berry Seeds",
 "LettuceSeeds|Lettuce Seeds",
 "TomatoSeeds|Tomato Seeds",
