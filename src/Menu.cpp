@@ -223,20 +223,11 @@ namespace DX11_Base {
 
             ImGui::Checkbox("Inf Stamina", &Config.IsInfStamina);
 
+            ImGui::Checkbox("Infinite Ammo", &Config.IsInfinAmmo);
+
             ImGui::Checkbox("Godmode", &Config.IsMuteki);
 
             ImGui::Checkbox("Revive", &Config.IsRevive);
-
-            if (ImGui::Button("ToggleInfAmmo", ImVec2(ImGui::GetContentRegionAvail().x - 3, 20)))
-            {
-                if (Config.GetPalPlayerCharacter()->ShooterComponent != NULL && Config.GetPalPlayerCharacter()->ShooterComponent->CanShoot())
-                {
-                    if (Config.GetPalPlayerCharacter()->ShooterComponent->GetHasWeapon() != NULL)
-                    {
-                        Config.GetPalPlayerCharacter()->ShooterComponent->GetHasWeapon()->IsRequiredBullet = !Config.GetPalPlayerCharacter()->ShooterComponent->GetHasWeapon()->IsRequiredBullet;
-                    }
-                }
-            }
 
             //��������һ��
             ImGui::SliderFloat("Speed Modifier", &Config.SpeedModiflers, 1, 10);
@@ -902,6 +893,16 @@ namespace DX11_Base {
                 if (Config.GetPalPlayerCharacter()->CharacterParameterComponent != NULL)
                 {
                     Config.GetPalPlayerCharacter()->CharacterParameterComponent->ResetDyingHP();
+                }
+            }
+        }
+        if (Config.GetPalPlayerCharacter() != NULL)
+        {
+            if (Config.GetPalPlayerCharacter()->ShooterComponent != NULL && Config.GetPalPlayerCharacter()->ShooterComponent->CanShoot())
+            {
+                if (Config.GetPalPlayerCharacter()->ShooterComponent->GetHasWeapon() != NULL)
+                {
+                    Config.GetPalPlayerCharacter()->ShooterComponent->GetHasWeapon()->IsRequiredBullet = !Config.IsInfinAmmo;
                 }
             }
         }
