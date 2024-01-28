@@ -24,6 +24,7 @@ Simple internal built with various code snippets and SDK from UC.me
 
 # Quick TP
 - All Boss Locations
+- Disable Safe Teleport to use
 
 # Misc
 - Max Level
