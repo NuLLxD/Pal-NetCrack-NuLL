@@ -24,6 +24,7 @@ Simple internal built with various code snippets and SDK from UC.me
 
 # Quick TP
 - All Boss Locations
+- Disable Safe Teleport to use
 
 # Misc
 - Max Level
@@ -31,7 +32,7 @@ Simple internal built with various code snippets and SDK from UC.me
 - Note: These commands may have unexpected side effects
 
 # SS
-![image](https://github.com/NuLLxD/Pal-NetCrack-NuLL/assets/965358/1aa968ad-7975-450e-9da5-b3de34c27eef)
+![image](https://github.com/NuLLxD/Pal-NetCrack-NuLL/assets/965358/6f9881e5-82d9-4a60-9ef1-e6c09c7f1cf9)
 ![image](https://github.com/NuLLxD/Pal-NetCrack-NuLL/assets/965358/f588bf6e-527b-449e-a94a-fb2d23e3da61)
 ![image](https://github.com/NuLLxD/Pal-NetCrack-NuLL/assets/965358/3f924e0d-5fbd-47d4-8ae5-2664602c2c98)
 ![image](https://github.com/NuLLxD/Pal-NetCrack-NuLL/assets/965358/296e819f-5eca-44bd-8b8d-7b05bbd1bb51)
