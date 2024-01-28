@@ -13,6 +13,7 @@ Simple internal built with various code snippets and SDK from UC.me
 
 # Exploits
 - Safe Teleport
+- Open Manager Menu
 - Give EXP
 - Teleport Home
 - Toggle Fly
@@ -26,18 +27,24 @@ Simple internal built with various code snippets and SDK from UC.me
 - All Boss Locations
 - Disable Safe Teleport to use
 
+# Manager Menu
+- This menu displays a list of nearby entities which you can TP to and/or kill.
+- List can be filtered for players only.
+
 # Misc
 - Max Level
 - Give all effigies
 - Note: These commands may have unexpected side effects
 
 # SS
-![image](https://github.com/NuLLxD/Pal-NetCrack-NuLL/assets/965358/6f9881e5-82d9-4a60-9ef1-e6c09c7f1cf9)
-![image](https://github.com/NuLLxD/Pal-NetCrack-NuLL/assets/965358/f588bf6e-527b-449e-a94a-fb2d23e3da61)
-![image](https://github.com/NuLLxD/Pal-NetCrack-NuLL/assets/965358/1c67e3a6-1cd1-427c-aaf7-0b7f5b51702d)
-![image](https://github.com/NuLLxD/Pal-NetCrack-NuLL/assets/965358/296e819f-5eca-44bd-8b8d-7b05bbd1bb51)
-![image](https://github.com/NuLLxD/Pal-NetCrack-NuLL/assets/965358/200ff735-a7bf-4ba3-b988-75ed9f130019)
-![image](https://github.com/NuLLxD/Pal-NetCrack-NuLL/assets/965358/6ef335a9-578a-4fe4-b000-9322570cae14)
+![image](https://github.com/NuLLxD/Pal-NetCrack-NuLL/assets/965358/7981786e-3ce2-400e-9e24-9df0eae7d0bb)
+![image](https://github.com/NuLLxD/Pal-NetCrack-NuLL/assets/965358/f42b117c-22db-4d94-bafb-73fcef92c5fa)
+![image](https://github.com/NuLLxD/Pal-NetCrack-NuLL/assets/965358/c1aa6ad5-7685-4c91-8fa9-c63073dfc47b)
+![image](https://github.com/NuLLxD/Pal-NetCrack-NuLL/assets/965358/623b965b-6da6-4e81-816a-aeacb0cb98a6)
+![image](https://github.com/NuLLxD/Pal-NetCrack-NuLL/assets/965358/5ec14b0a-d74f-4472-a325-1e94b6f2b780)
+![image](https://github.com/NuLLxD/Pal-NetCrack-NuLL/assets/965358/fee05338-0897-476c-a47e-d517a318e8d7)
+![image](https://github.com/NuLLxD/Pal-NetCrack-NuLL/assets/965358/61bc15fb-dbda-4d00-b1f7-2f7c32a47cb6)
+
 
 # AOBS
 > GObjects: `48 8B 05 ? ? ? ? 48 8B 0C C8 4C 8D 04 D1 EB 03`  
