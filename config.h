@@ -56,7 +56,7 @@ public:
 	float WarsectLocation[3] = { -226359, 231970, -1807.45 };
 	float WumpoBotanLocation[3] = { -148826, 364859, -1831.33 };
 
-	//�˵��ж�
+	//check
 	bool IsESP = false;
 	bool IsAimbot = false;
 	bool IsSpeedHack = false;
@@ -71,8 +71,12 @@ public:
 	bool IsToggledFly = false;
 	bool isCatchRate = false;
 	bool isGetPalPlayerCharacter = false;
+	bool IsQuick = false;
+	bool filterPlayer = false;
+	bool matchDbItems = true;
+	bool bisOpenManager = false;
 
-	//����
+	//def and value
 	float SpeedModiflers = 1.0f;
 	float CatchRate = 1;
 	int DamageUp = 0;
@@ -85,24 +89,38 @@ public:
 	char ItemName[255];
 	char PalName[255];
 	char inputTextBuffer[255] = "";
-	static SDK::UWorld* gWorld;
+	/*static SDK::UWorld* gWorld;*/
 	int PalLvL = 1;
 	SDK::APalPlayerCharacter* localPlayer = NULL;
 	SDK::TArray<SDK::APalPlayerCharacter*> AllPlayers = {};
 	SDK::UPalCharacterImportanceManager* UCIM = NULL;
 	SDK::UObject* WorldContextObject = NULL;
 	std::vector<std::string> db_filteredItems;
+	SDK::UWorld* gWorld = nullptr;
+
+	enum QuickItemSet
+	{
+		basic_items_stackable,
+		basic_items_single,
+		pal_unlock_skills,
+		spheres,
+		tools
+
+	};
 	
-	//����
+	//static function
 	static SDK::UWorld* GetUWorld();
 	static SDK::UPalCharacterImportanceManager* GetCharacterImpManager();
 	static SDK::APalPlayerCharacter* GetPalPlayerCharacter();
 	static SDK::APalPlayerState* GetPalPlayerState();
 	static SDK::TArray<SDK::APalPlayerCharacter*> GetTAllPlayers();
+	static SDK::UPalPlayerInventoryData* GetInventoryComponent();
+	static SDK::APalWeaponBase* GetPlayerEquippedWeapon();
 	static bool	GetTAllPlayers(SDK::TArray<class SDK::APalCharacter*>* outResult);
 	static bool	GetTAllImpNPC(SDK::TArray<class SDK::APalCharacter*>* outResult);
 	static bool	GetTAllNPC(SDK::TArray<class SDK::APalCharacter*>* outResult);
 	static bool	GetTAllPals(SDK::TArray<class SDK::APalCharacter*>* outResult);
+	static bool GetAllActorsofType(SDK::UClass* mType, std::vector<SDK::AActor*>* outArray, bool bLoopAllLevels = false, bool bSkipLocalPlayer = false);
 	static void Init();;
 	static void Update(const char* filterText);
 	static const std::vector<std::string>& GetFilteredItems();
