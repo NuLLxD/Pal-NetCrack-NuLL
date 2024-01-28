@@ -522,7 +522,7 @@ namespace DX11_Base {
         }
         class TeleportTabs {
         public:
-            TeleportTabs() : currentPage(0), buttonsPerPage(5) {
+            TeleportTabs() : currentPage(0), buttonsPerPage(10) {
                 // Add your teleport locations here
                 locationMap["Anubis"] = Config.AnubisLocation;
                 locationMap["Azurobe"] = Config.AzurobeLocation;
