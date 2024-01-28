@@ -22,6 +22,9 @@ Simple internal built with various code snippets and SDK from UC.me
 - Set Catch Rate (Only works in SP)
 - Item Spawner
 
+# Quick TP
+- All Boss Locations
+
 # Misc
 - Max Level
 - Give all effigies
@@ -31,7 +34,7 @@ Simple internal built with various code snippets and SDK from UC.me
 ![image](https://github.com/NuLLxD/Pal-NetCrack-NuLL/assets/965358/1aa968ad-7975-450e-9da5-b3de34c27eef)
 ![image](https://github.com/NuLLxD/Pal-NetCrack-NuLL/assets/965358/f588bf6e-527b-449e-a94a-fb2d23e3da61)
 ![image](https://github.com/NuLLxD/Pal-NetCrack-NuLL/assets/965358/3f924e0d-5fbd-47d4-8ae5-2664602c2c98)
-![image](https://github.com/NuLLxD/Pal-NetCrack-NuLL/assets/965358/0ba30ad0-d7a8-4c98-9f6f-056bb701da58)
+![image](https://github.com/NuLLxD/Pal-NetCrack-NuLL/assets/965358/296e819f-5eca-44bd-8b8d-7b05bbd1bb51)
 ![image](https://github.com/NuLLxD/Pal-NetCrack-NuLL/assets/965358/200ff735-a7bf-4ba3-b988-75ed9f130019)
 ![image](https://github.com/NuLLxD/Pal-NetCrack-NuLL/assets/965358/6ef335a9-578a-4fe4-b000-9322570cae14)
 
