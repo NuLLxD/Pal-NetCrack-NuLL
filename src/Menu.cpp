@@ -482,6 +482,7 @@ namespace DX11_Base {
             static char item_search[100];;
 
             ImGui::InputText("Search", item_search, IM_ARRAYSIZE(item_search));
+            ImGui::BeginChild("ScrollingRegion", ImVec2(0, 800), true);
             for (const auto& item : list) {
                 std::istringstream ss(item);
                 std::string left_text, right_text;
@@ -500,7 +501,7 @@ namespace DX11_Base {
 
                 if (cur_size != 0 && cur_size < 20)
                 {
-                    ImGui::SameLine();
+                    ImGui::Columns(1);
                 }
                 else if (cur_size != 0)
                 {
@@ -517,6 +518,7 @@ namespace DX11_Base {
                 }
                 ImGui::PopID();
             }
+            ImGui::EndChild();
         }
         class TeleportTabs {
         public:
