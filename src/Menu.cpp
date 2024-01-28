@@ -527,67 +527,128 @@ namespace DX11_Base {
                 ImGui::PopID();
             }
         }
-        void TABQuickTP()
-        {
-            if (ImGui::Button("Anubis", ImVec2(ImGui::GetContentRegionAvail().x - 3, 20)))
-            {
-                if (Config.GetPalPlayerCharacter() != NULL)
-                {
-                    if (Config.GetPalPlayerCharacter()->GetPalPlayerController() != NULL)
-                    {
-                        if (Config.AnubisLocation != NULL)
-                        {
-                            SDK::FVector vector = { Config.AnubisLocation[0],Config.AnubisLocation[1],Config.AnubisLocation[2] };
-                            AnyWhereTP(vector, Config.IsSafe);
-                        }
+        class TeleportTabs {
+        public:
+            TeleportTabs() : currentPage(0), buttonsPerPage(5) {
+                // Add your teleport locations here
+                locationMap["Anubis"] = Config.AnubisLocation;
+                locationMap["Azurobe"] = Config.AzurobeLocation;
+                locationMap["Beakon"] = Config.BeakonLocation;
+                locationMap["Broncherry Aqua"] = Config.BroncherryAquaLocation;
+                locationMap["Broncherry"] = Config.BroncherryLocation;
+                locationMap["Bushi"] = Config.BushiLocation;
+                locationMap["Chillet"] = Config.ChilletLocation;
+                locationMap["Dinossom Lux"] = Config.DinossomLuxLocation;
+                locationMap["Elizabee"] = Config.ElizabeeLocation;
+                locationMap["Felbat"] = Config.FelbatLocation;
+                locationMap["Fenglope"] = Config.FenglopeLocation;
+                locationMap["Frostallion"] = Config.FrostallionLocation;
+                locationMap["Grintale"] = Config.GrintaleLocation;
+                locationMap["Gumoss"] = Config.GumossLocation;
+                locationMap["Jetragon"] = Config.JetragonLocation;
+                locationMap["Jormuntide2"] = Config.Jormuntide2Location;
+                locationMap["Jormuntide"] = Config.JormuntideLocation;
+                locationMap["Katress"] = Config.KatressLocation;
+                locationMap["Kingpaca"] = Config.KingpacaLocation;
+                locationMap["Lunaris"] = Config.LunarisLocation;
+                locationMap["Mammorest"] = Config.MammorestLocation;
+                locationMap["Menasting"] = Config.MenastingLocation;
+                locationMap["Mossanda Lux"] = Config.MossandaLuxLocation;
+                locationMap["Nitewing"] = Config.NitewingLocation;
+                locationMap["Paladius"] = Config.PaladiusLocation;
+                locationMap["Penking"] = Config.PenkingLocation;
+                locationMap["Petallia"] = Config.PetalliaLocation;
+                locationMap["Quivern"] = Config.QuivernLocation;
+                locationMap["Relaxasaurus"] = Config.RelaxasaurusLuxLocation;
+                locationMap["Siblex"] = Config.SiblexLocation;
+                locationMap["Suzaku"] = Config.SuzakuLocation;
+                locationMap["Univolt"] = Config.UnivoltLocation;
+                locationMap["Vaelet"] = Config.VaeletLocation;
+                locationMap["Verdash"] = Config.VerdashLocation;
+                locationMap["Warsect"] = Config.WarsectLocation;
+                locationMap["Wumpo Botan"] = Config.WumpoBotanLocation;
+                // Add more teleport locations as needed
+
+                // Extract button names from the map
+                for (const auto& pair : locationMap) {
+                    teleportLocations.push_back(pair.first);
+                }
+
+                UpdateCurrentPageButtons();
+            }
+
+            void Draw() {
+                // Draw buttons only if there are locations
+                if (teleportLocations.empty()) {
+                    ImGui::Text("No teleport locations available.");
+                    return;
+                }
+
+                // Draw buttons
+                for (int i = 0; i < currentButtons.size(); ++i) {
+                    if (ImGui::Button(currentButtons[i].c_str(), ImVec2(ImGui::GetContentRegionAvail().x - 3, 20))) {
+                        // Button logic
+                        TeleportToLocation(currentButtons[i]);
                     }
+                }
+
+                // Draw page navigation
+                ImGui::Separator();
+                ImGui::Text("Page: %d", currentPage + 1);
+                ImGui::SameLine();
+                if (ImGui::Button("Previous")) {
+                    currentPage = (currentPage - 1 + totalPages) % totalPages;
+                    UpdateCurrentPageButtons();
+                }
+                ImGui::SameLine();
+                if (ImGui::Button("Next")) {
+                    currentPage = (currentPage + 1) % totalPages;
+                    UpdateCurrentPageButtons();
                 }
             }
 
-            if (ImGui::Button("Frostallion", ImVec2(ImGui::GetContentRegionAvail().x - 3, 20)))
-            {
-                if (Config.GetPalPlayerCharacter() != NULL)
-                {
-                    if (Config.GetPalPlayerCharacter()->GetPalPlayerController() != NULL)
-                    {
-                        if (Config.FrostallionLocation != NULL)
-                        {
-                            SDK::FVector vector = { Config.FrostallionLocation[0],Config.FrostallionLocation[1],Config.FrostallionLocation[2] };
-                            AnyWhereTP(vector, Config.IsSafe);
-                        }
-                    }
+            void TeleportToLocation(const std::string& location) {
+                // Check if the location exists in the map
+                if (locationMap.find(location) != locationMap.end()) {
+                    SDK::FVector vector = { locationMap[location][0], locationMap[location][1], locationMap[location][2] };
+                    AnyWhereTP(vector, Config.IsSafe);
                 }
             }
 
-            if (ImGui::Button("Jetdragon", ImVec2(ImGui::GetContentRegionAvail().x - 3, 20)))
-            {
-                if (Config.GetPalPlayerCharacter() != NULL)
-                {
-                    if (Config.GetPalPlayerCharacter()->GetPalPlayerController() != NULL)
-                    {
-                        if (Config.JetragonLocation != NULL)
-                        {
-                            SDK::FVector vector = { Config.JetragonLocation[0],Config.JetragonLocation[1],Config.JetragonLocation[2] };
-                            AnyWhereTP(vector, Config.IsSafe);
-                        }
-                    }
+        private:
+            void UpdateCurrentPageButtons() {
+                int startIdx = currentPage * buttonsPerPage;
+                int endIdx = (currentPage + 1) * buttonsPerPage;
+
+                if (startIdx < 0) {
+                    startIdx = 0;
                 }
+
+                if (endIdx > teleportLocations.size()) {
+                    endIdx = teleportLocations.size();
+                }
+
+                currentButtons.clear();
+                for (int i = startIdx; i < endIdx; ++i) {
+                    currentButtons.push_back(teleportLocations[i]);
+                }
+
+                totalPages = (teleportLocations.size() + buttonsPerPage - 1) / buttonsPerPage;
             }
 
-            if (ImGui::Button("Paladius", ImVec2(ImGui::GetContentRegionAvail().x - 3, 20)))
-            {
-                if (Config.GetPalPlayerCharacter() != NULL)
-                {
-                    if (Config.GetPalPlayerCharacter()->GetPalPlayerController() != NULL)
-                    {
-                        if (Config.PaladiusLocation != NULL)
-                        {
-                            SDK::FVector vector = { Config.PaladiusLocation[0],Config.PaladiusLocation[1],Config.PaladiusLocation[2] };
-                            AnyWhereTP(vector, Config.IsSafe);
-                        }
-                    }
-                }
-            }
+        private:
+            std::vector<std::string> teleportLocations;
+            std::vector<std::string> currentButtons;
+            int currentPage;
+            int buttonsPerPage;
+            int totalPages;
+            std::map<std::string, float*> locationMap; // Map button names to their corresponding locations in Config
+        };
+
+        void TABQuickTP() {
+            static TeleportTabs teleportTabs; // Static to retain state between calls
+            // Render your user interface
+            teleportTabs.Draw();
         }
         void TABGameBreaking()
         {
