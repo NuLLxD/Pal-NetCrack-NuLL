@@ -735,7 +735,7 @@ namespace DX11_Base {
             MainMenu();
         if (Config.bisOpenManager && g_GameVariables->m_ShowMenu)
         {
-            ManagerMenu();
+            EntityList();
         }
 
         if (g_GameVariables->m_ShowHud)
@@ -745,7 +745,7 @@ namespace DX11_Base {
             ImGui::ShowDemoWindow();
     }
 
-    void Menu::ManagerMenu()
+    void Menu::EntityList()
     {
         if (ImGui::Begin("Manager", &g_GameVariables->m_ShowMenu, 96))
         {
