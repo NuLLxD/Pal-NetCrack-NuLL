@@ -39,6 +39,7 @@ public:
 	float KatressLocation[3] = { -276223, 268992, -1209.67 };
 	float KingpacaLocation[3] = { -336105, 181639, 901.022 };
 	float LunarisLocation[3] = { -426589.48, 90677.8, 215.90 };
+	float LyleenNoctLocation[3] = { 31949.71926269835, 85551.87052192072, 5397.467146487356 };
 	float MammorestLocation[3] = { -341702, 243628, -533.76 };
 	float MenastingLocation[3] = { -77943, 393182, 665.51 };
 	float MossandaLuxLocation[3] = { -208233, 364318, 1167.46 };

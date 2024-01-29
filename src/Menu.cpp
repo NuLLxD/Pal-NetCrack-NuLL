@@ -538,6 +538,7 @@ namespace DX11_Base {
                 locationMap["Katress"] = Config.KatressLocation;
                 locationMap["Kingpaca"] = Config.KingpacaLocation;
                 locationMap["Lunaris"] = Config.LunarisLocation;
+                locationMap["Lyleen Noct"] = Config.LyleenNoctLocation;
                 locationMap["Mammorest"] = Config.MammorestLocation;
                 locationMap["Menasting"] = Config.MenastingLocation;
                 locationMap["Mossanda Lux"] = Config.MossandaLuxLocation;
