@@ -291,7 +291,7 @@ namespace DX11_Base {
             //Config.GetPalPlayerCharacter()->GetPalPlayerController()->GetPalPlayerState()->RequestSpawnMonsterForPlayer(name, 5, 1);
             ImGui::Checkbox("SafeTeleport", &Config.IsSafe);
             ImGui::Checkbox("Show Quick Tab", &Config.IsQuick);
-            ImGui::Checkbox("Open Manager Menu", &Config.bisOpenManager);
+            ImGui::Checkbox("Open Entity List", &Config.bisOpenManager);
             ImGui::InputFloat3("Pos:", Config.Pos);
             ImGui::InputInt("EXP:", &Config.EXP);
             if (ImGui::Button("Give exp", ImVec2(ImGui::GetContentRegionAvail().x - 3, 20)))
@@ -735,7 +735,7 @@ namespace DX11_Base {
             MainMenu();
         if (Config.bisOpenManager && g_GameVariables->m_ShowMenu)
         {
-            ManagerMenu();
+            EntityList();
         }
 
         if (g_GameVariables->m_ShowHud)
@@ -745,9 +745,9 @@ namespace DX11_Base {
             ImGui::ShowDemoWindow();
     }
 
-    void Menu::ManagerMenu()
+    void Menu::EntityList()
     {
-        if (ImGui::Begin("Manager", &g_GameVariables->m_ShowMenu, 96))
+        if (ImGui::Begin("Entity List", &g_GameVariables->m_ShowMenu, 96))
         {
             if (Config.GetUWorld() != NULL)
             {
