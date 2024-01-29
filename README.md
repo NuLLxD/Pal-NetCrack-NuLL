@@ -38,7 +38,7 @@ Simple internal built with various code snippets and SDK from UC.me
 
 # SS
 ![image](https://github.com/NuLLxD/Pal-NetCrack-NuLL/assets/965358/7981786e-3ce2-400e-9e24-9df0eae7d0bb)
-![image](https://github.com/NuLLxD/Pal-NetCrack-NuLL/assets/965358/f42b117c-22db-4d94-bafb-73fcef92c5fa)
+![image](https://github.com/NuLLxD/Pal-NetCrack-NuLL/assets/965358/0c573a6c-bc5f-4e24-a7f4-367d66ee5295)
 ![image](https://github.com/NuLLxD/Pal-NetCrack-NuLL/assets/965358/c1aa6ad5-7685-4c91-8fa9-c63073dfc47b)
 ![image](https://github.com/NuLLxD/Pal-NetCrack-NuLL/assets/965358/623b965b-6da6-4e81-816a-aeacb0cb98a6)
 ![image](https://github.com/NuLLxD/Pal-NetCrack-NuLL/assets/965358/5ec14b0a-d74f-4472-a325-1e94b6f2b780)
