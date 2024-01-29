@@ -27,8 +27,8 @@ Simple internal built with various code snippets and SDK from UC.me
 - All Boss Locations
 - Disable Safe Teleport to use
 
-# Manager Menu
-- This menu displays a list of nearby entities which you can TP to and/or kill.
+# Entity List
+- This menu displays a list of nearby entities (Players, NPCs and monsters) which you can TP to and/or kill.
 - List can be filtered for players only.
 
 # Misc
