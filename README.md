@@ -13,7 +13,7 @@ Simple internal built with various code snippets and SDK from UC.me
 
 # Exploits
 - Safe Teleport
-- Open Manager Menu
+- Open Entity List
 - Give EXP
 - Teleport Home
 - Toggle Fly
@@ -30,6 +30,7 @@ Simple internal built with various code snippets and SDK from UC.me
 # Entity List
 - This menu displays a list of nearby entities (Players, NPCs and monsters) which you can TP to and/or kill.
 - List can be filtered for players only.
+- 'Mask It' can be used on your player entity to hide player name.
 
 # Misc
 - Max Level
